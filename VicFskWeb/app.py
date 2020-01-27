@@ -17,5 +17,13 @@ def index():
 def index2():
     return "Hi"
 
+@app.route("/#Testimoni")
+def testi():
+    with open(".//txt//1.txt",mode='r') as f1:
+        lins = f1.readline()
+    names1 = lins[0].rstrip('\n')
+
+
+
 if __name__ == '__main__':
     app.run(debug=True)
