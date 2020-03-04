@@ -1,6 +1,12 @@
 
 {% block Tstmn%}
-
+<script>
+  $(document).ready(function(){
+      $(a.mor).click(function(){
+         $(#showme)slideToggle("slow");
+      });
+  });
+</script>
 <div class="py-5" id="Testimoni">
     <div class="container">
       <h2>Testimonis </h2>
@@ -10,7 +16,8 @@
           <div class="card">
             <div class="card-body p-4">
               <p class="mb-3">{{ txtsi[1] }}<br></p>
-              <p><a href="#">more...</a></p>
+              <p><a href="javascript:void(0)" class="mor" >more...</a></p>
+              <p id="showme" style="display: none;">{{ txtsi[2] }}</p>
               <div class="row">
                 <div class="col-lg-2 col-3"> <img class="img-fluid d-block rounded-circle" src="https://static.pingendo.com/img-placeholder-2.svg"> </div>
                 <div class="col-lg-10 col-9 d-flex align-items-center">
