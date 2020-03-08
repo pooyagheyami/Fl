@@ -1,0 +1,30 @@
+{% if len == "En" %}
+   {% set menulist = [("#","fa fa-home","Home"),("#Articel","fa fa-file-text","Articel"),("#Download","fa fa-download","Download"),
+("#Testimoni","fa fa-legal","Testimonis"),("#Question","fa fa-question-circle","Questions"),("#Contact","fa fa-envelope","Contact") ] %}
+{% else %}
+   {% set menulist = [("#","fa fa-home","வீடு"),("#Articel","fa fa-file-text","கட்டுரைகள்"),("#Download","fa fa-download","பதிவிறக்கு"),
+("#Testimoni","fa fa-legal","டெஸ்டிமோனிஸ்"),("#Question","fa fa-question-circle","கேள்விகள்"),("#Contact","fa fa-envelope","தொடர்பு") ] %}
+{% endif %}
+
+{% extends "MinLyOt.html" %}
+
+{% include "CarWeb.html" %}
+{% include "ArtWeb.html" %}
+{% include "DwnLod.html" %}
+{#{% include "ProWeb2.html" %}#}
+{% include "TstWeb.html" %}
+{% include "QstWeb.html" %}
+
+
+
+{% block Main %}
+
+  {% block Cars %}{% endblock %}
+  {% block Arts %}{% endblock %}
+  {% block Dnlod %}{% endblock %}
+  {#{% block Prods %}{% endblock %}#}
+  {% block Tstmn %}{% endblock %}
+  {% block Qstin %}{% endblock %}
+
+
+{% endblock %}

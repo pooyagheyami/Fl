@@ -1,0 +1,3 @@
+git remote add scalingo git@ssh.osc-fr1.scalingo.com:tmlkey.git
+git push scalingo master
+https://tmlkey.osc-fr1.scalingo.io. 

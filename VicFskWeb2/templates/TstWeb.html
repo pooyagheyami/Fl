@@ -1,0 +1,56 @@
+
+{% block Tstmn%}
+
+<div class="py-5" id="Testimoni">
+    <div class="container">
+      <h2>Testimonis </h2>
+      <div class="row">
+        <div class="col-md-6 p-3">
+
+          <div class="card">
+            <div class="card-body p-4">
+              <p class="mb-3">{{ txtsi[1] }}<br></p>
+              <p ><a id="tmor1" href="javascript:void(0)"  >more...</a></p>
+              <p id="showme" style="display: none;">{{ txtsi[2] }}</p>
+              <div class="row">
+                <div class="col-lg-2 col-3"> <img class="img-fluid d-block rounded-circle" src="https://static.pingendo.com/img-placeholder-2.svg"> </div>
+                <div class="col-lg-10 col-9 d-flex align-items-center">
+                  <!-- <p class="my-2">J. W. Goethe <i>CEO</i> </p> -->
+                  <p class="my-2">{{ txtsi[0] }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ml-auto col-md-6 p-3">
+          <div class="card">
+            <div class="card-body p-4">
+              <p class="mb-3">With this product I was able to do my best and save my time and energy. I was comfortable with it</p>
+              <p><a id="tmor2" href="#">more...</a></p>
+              <div class="row">
+                <div class="col-lg-2 col-3"> <img class="img-fluid d-block rounded-circle" src="https://static.pingendo.com/img-placeholder-3.svg"> </div>
+                <div class="col-lg-10 col-9 d-flex align-items-center">
+                  <p class="my-2">G. W. John&nbsp; <i>Co-founder</i> </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script>
+        let imor = document.querySelectorAll('a')
+        imor.forEach(function(i){
+            if( i.id == 'tmor1' ){
+                i.onclick(function(){
+                     alert("I clicked");
+                     }
+                     );
+                }
+            console.log(i);
+         });
+</script>
+
+{% endblock %}
